@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+}
+body{
+    background: #000;
+}
+.container{
+    background: #222;
+    margin: 100px auto 0;
+    width: 350px;
+    padding: 40px;
+    border-radius: 20px;
+}
+.container h2{
+    color: #fff;
+    margin: 20px 5px;
+}
+input{
+    padding: 10px 20px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: #000;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+button:hover{
+    background: #fff;
+    color: #000;
+}
+ul{
+    margin-top: 30px;
+}
+ul li{
+    position: relative;
+    color: #fff;
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(../images/unchecked.png);
+    background-position: center;
+    background-size: cover;
+    top: 11px;
+    left: 11px;
+}
+ul li.checked{
+    text-decoration: line-through;
+    color: #555;
+}
+ul li.checked::before{
+    background-image: url(../images/checked.png);
+}
+ul li span{
+    position: absolute;
+    top: 11px;
+    right: 12px;
+    cursor: pointer;
+}
